@@ -4,12 +4,38 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Color Picker</title>
+    <title>Image Color Picker – Pick colors from an image</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
   </head>
 
   <body>
 
-    <h1>Image Color Picker</h1>
+    <h1 class="word" style="--h: 140, --s: paused">
+      <span class="s" style="--c: hsl(calc(var(--h) + 40), 60%, 60%); --d: .7s">Image Color Picker</span>
+      <span class="s" style="--c: hsl(calc(var(--h) + 20), 70%, 60%); --d: .6s">Image Color Picker</span>
+      <span class="s" style="--c: hsl(var(--h), 80%, 60%); --d: .5s">Image Color Picker</span>
+      <span class="s" style="--c: hsl(calc(var(--h) + 20), 100%, 60%); --d: .4s">Image Color Picker</span>
+      <span>Image Color Picker</span>
+    </h1>
+    <p>Pick colors from an image.</p>
+    <p>Follow <a href="https://twitter.com/Viybel" rel="noopener noreferrer">@Viybel</a> on twitter to stay tuned!</p>
+
+    <video src="./image-color-picker-demo.mp4" loop muted>
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+
+    <script>
+      window.onload = () => {
+        let word = document.querySelector(".word").style;
+
+        document.querySelector("video").play();
+        word.setProperty("--s", "running");
+        setInterval(() => {
+          word.setProperty("--h", Math.random() * 360);
+        }, 3000)
+      }
+
+    </script>
 
   </body>
 
