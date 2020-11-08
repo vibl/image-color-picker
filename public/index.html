@@ -2,41 +2,32 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Image Color Picker – Pick colors from an image</title>
-    <link rel="stylesheet" href="./style.css" type="text/css">
+
+    <meta name="description" content="Pick colors from an image">
+    <meta name="keywords" content="color, picker, designer, decorator, artist, nature, react, web, app">
+
+    <meta property="og:title" content="Image Color Picker – Pick colors from an image">
+    <meta property="og:description" content="Pick colors from an image">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://image-color-picker.vercel.app">
+    <meta property="og:image" content="https://image-color-picker.vercel.app/assets/og-image.jpg">
+
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="@Viybel">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
-    <h1 class="word" style="--h: 140, --s: paused">
-      <span class="s" style="--c: hsl(calc(var(--h) + 40), 60%, 60%); --d: .7s">Image Color Picker</span>
-      <span class="s" style="--c: hsl(calc(var(--h) + 20), 70%, 60%); --d: .6s">Image Color Picker</span>
-      <span class="s" style="--c: hsl(var(--h), 80%, 60%); --d: .5s">Image Color Picker</span>
-      <span class="s" style="--c: hsl(calc(var(--h) + 20), 100%, 60%); --d: .4s">Image Color Picker</span>
-      <span>Image Color Picker</span>
-    </h1>
-    <p>Pick colors from an image.</p>
-    <p>Follow <a href="https://twitter.com/Viybel" rel="noopener noreferrer">@Viybel</a> on twitter to stay tuned!</p>
-
-    <video src="./image-color-picker-demo.mp4" loop muted>
-      Sorry, your browser doesn't support embedded videos.
-    </video>
-
-    <script>
-      window.onload = () => {
-        let word = document.querySelector(".word").style;
-
-        document.querySelector("video").play();
-        word.setProperty("--s", "running");
-        setInterval(() => {
-          word.setProperty("--h", Math.random() * 360);
-        }, 3000)
-      }
-
-    </script>
-
+    <noscript>Hey! You need to enable JavaScript to run this application — Don't worry it's a zero-analytics site 😇</noscript>
+    <div id="app"></div>
   </body>
 
 </html>
