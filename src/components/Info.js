@@ -173,7 +173,7 @@ function Info({ selectedColors, setSelectedColors }) {
             <IconTwitter />
           </a>
           <a
-            href="https://github.com/vibl"
+            href="https://github.com/vibl/image-color-picker"
             target="_blank"
             rel="noopener noreferrer"
             className="info__link"
@@ -181,12 +181,26 @@ function Info({ selectedColors, setSelectedColors }) {
             <IconGitHub />
           </a>
           <a
-            href="https://dribbble.com/vibl"
+            href="https://github.com/vibl"
             target="_blank"
             rel="noopener noreferrer"
             className="info__link"
           >
             <IconDribble />
+          </a>
+        </div>
+        <div className="product-hunt" style={{ marginTop: "12px" }}>
+          <a
+            href="https://www.producthunt.com/posts/image-color-picker?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-image-color-picker"
+            target="_blank"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=274059&theme=light"
+              alt="Image Image Image Color Pickererer - Pick colors from an image | Product Hunt"
+              style={{ width: "250px", height: "54px" }}
+              width="250"
+              height="54"
+            />
           </a>
         </div>
       </footer>

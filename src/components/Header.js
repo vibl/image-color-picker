@@ -98,7 +98,7 @@ function Header({
 
             <p>
               If you have a Twitter social network account, please use and like
-              this product{" "}
+              this product 🎉{" "}
               <a
                 href="https://twitter.com/Viybel"
                 target="_blank"
@@ -112,7 +112,7 @@ function Header({
             <p>
               The project source code is open-source and is available on{" "}
               <a
-                href="https://github.com/vibl"
+                href="https://github.com/vibl/image-color-picker"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -173,7 +173,7 @@ function Header({
             </div>
 
             <p>
-              Lastly, if you like to work with me,{" "}
+              Lastly, if you like to work with me, 🌲{" "}
               <a href="mailto:job@stroebel.fr">hire me</a>. I am
               available for{" "}
               <a
