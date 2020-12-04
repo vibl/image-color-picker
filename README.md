@@ -1,5 +1,7 @@
 
-  A React app to pick colors from images.
+A React app to pick colors from images.
+
+![image-color-picker preview](./image-color-picker-preview.gif)
   
   # Features
   
